@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data Siswa</title>
+<style>
+/* CSS for table styling */
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+border: 1px solid #dddddd;
+padding: 8px;
+text-align: left;
+}
+th {
+background-color: #dddddd;
+}
+/* CSS for form styling */
+form {
+margin: 20px 0;
+}
+label {
+display: block;
+margin: 10px 0;
+}
+input[type="text"], select {
+padding: 8px;
+width: 25%;
+margin: 8px 0;
+box-sizing: border-box;
+}
+input[type="submit"] {
+background-color: #4CAF50;
+color: white;
+padding: 12px 20px;
+border: none;
+cursor: pointer;
+}
+/* CSS for image styling */
+img {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<h1>Student Web</h1>
+<table>
+<tr>
+<th>Display Name</th>
+<th>Class</th>
+<th>Absence</th>
+<th>Photo</t
+    <th>Action</th>
+</tr>
+<tr>
+<td>John Doe</td>
+<td>10th Grade</td>
+<td>3</td>
+<td><img src="" alt="John Doe"></td>
+<td>
+<a href="#">Edit</a> |
+<a href="#">Delete</a>
+</td>
+</tr>
+</table>
+<form action="submit.php" method="post">
+<label for="displayName">Display Name:</label>
+<input type="text" id="displayName" name="displayName">
+<label for="class">Class:</label>
+<select id="class" name="class">
+<option value="9th Grade">9th Grade</option>
+<option value="10th Grade">10th Grade</option>
+<option value="11th Grade">11th Grade</option>
+<option value="12th Grade">12th Grade</option>
+</select>
+<label for="absence">Absence:</label>
+<input type="text" id="absence" name="absence">
+<label for="photo">Photo:</label>
+<input type="file" id="photo" name="photo">
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
